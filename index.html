@@ -1,12 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GFG</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meera Kumar — Lead Engineer & Freelancer</title>
+  <meta name="description" content="Meera Kumar — Lead Software Engineer with 35 years of freelancing experience. Architecture, distributed systems, Python, Go, cloud, and mentorship." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233A6EA5'/%3E%3Ctext x='50' y='58' font-size='44' text-anchor='middle' fill='white' font-family='Segoe UI, Roboto, Arial'%3EM%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --glass: rgba(255,255,255,0.04);
+      --accent:#2dd4bf; --muted:#94a3b8; --text:#e6eef8;
+      --maxw:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071026 0%, #071b2b 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--maxw);margin:44px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:96px;height:96px;border-radius:14px;flex:0 0 96px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:grid;place-items:center;font-weight:700;color:#04202a;font-size:40px}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .hero{display:flex;gap:28px;align-items:center;justify-content:space-between;margin-top:20px}
+    .hero-left{flex:1}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(3,7,18,0.6);}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#04202a;border:none;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none}
+    .meta{display:flex;gap:12px;margin-top:12px;color:var(--muted);font-size:14px}
+
+    /* two-column layout */
+    main{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:22px}
+    .section{margin-bottom:18px}
+    h2{font-size:18px;margin:0 0 10px}
+    p{color:var(--muted);line-height:1.55}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--text)}
+    .timeline{border-left:2px solid rgba(255,255,255,0.03);padding-left:14px}
+    .job{margin-bottom:16px}
+    .job h3{margin:0;font-size:15px}
+    .job .meta{margin-top:6px}
+
+    aside .card{position:sticky;top:28px}
+    .contact a{display:block;text-decoration:none;color:var(--text);margin-bottom:8px}
+
+    footer{margin-top:34px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:960px){.wrap{padding:18px}.hero{flex-direction:column;align-items:flex-start}.avatar{width:84px;height:84px}.hero-right{width:100%}.main{grid-template-columns:1fr}}
+    @media (max-width:780px){main{grid-template-columns:1fr}.avatar{width:72px;height:72px;font-size:32px}}
+
+    /* small helpers */
+    .pill{display:inline-block;padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px}
+    .project{border-radius:10px;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);}
+    .muted{color:var(--muted)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.02),transparent);margin:12px 0}
+  </style>
 </head>
 <body>
-    <h1>Hello World this is my first web page.</h1>
-</body>
-</html>
+  <div class="wrap">
+    <header>
+      <div class="avatar">MK</div>
+      <div>
+        <h1>Meera Kumar — Lead Software Engineer</h1>
+        <div class="subtitle">35 years freelancing · Architecture · Distributed Systems · Mentorship</div>
+        <div class="meta">
+          <div class="pill">Senior Engineer</div>
+          <div class="pill">Consultant & Contractor</div>
+          <div class="pill">Remote-friendly</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left card">
+        <h2>Seasoned engineering leader building reliable systems</h2>
+        <p class="muted">I design and deliver large-scale, maintainable software for startups and enterprises. Over 35 years of freelancing across fintech, healthcare, and B2B SaaS — from prototyping to long-term architecture and team mentorship.</p>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="cta" href="mailto:meera.kumar@example.com">📨 Hire / Contact</a>
+          <a class="cta" href="#projects" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)">📁 View Projects</a>
+        </div>
+
+        <div class="divider"></div>
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <div><strong>Availability</strong><div class="muted">Consulting — part-time / contract</div></div>
+          <div><strong>Rate</strong><div class="muted">Depends on scope — open to long-term retainers</div></div>
+        </div>
+      </div>
+
+      <div class="hero-right" style="width:320px">
+        <aside class="card contact">
+          <h3>Contact</h3>
+          <a href="mailto:meera.kumar@example.com">meera.kumar@example.com</a>
+          <a href="https://www.linkedin.com/in/meera-kumar" target="_blank" rel="noopener">LinkedIn / meera-kumar</a>
+          <a href="https://github.com/meerakumar" target="_blank" rel="noopener">GitHub / meerakumar</a>
+
+          <div class="divider"></div>
+          <h3>Quick facts</h3>
+          <div class="muted">Lead engineer, systems architect, mentor. Worked with distributed systems, payment platforms, high-throughput APIs, and observability. Comfortable with remote and cross-timezone teams.</div>
+
+          <div class="divider"></div>
+          <h3>Location</h3>
+          <div class="muted">Remote — UTC+5:30 (India)</div>
+        </aside>
+      </div>
+    </section>
+
+    <main>
+      <div>
+        <section class="section card">
+          <h2>About Me</h2>
+          <p>I’m Meera — a practical engineering leader who loves simplicity at scale. For 35 years I’ve freelanced with product teams to take systems from concept to production: designing APIs, improving reliability, and coaching engineers to lift their craft. I focus on pragmatic architecture, automated testing, and clear operational runbooks.</p>
+        </section>
+
+        <section class="section card">
+          <h2>Core Skills</h2>
+          <div class="skills" style="margin-top:10px">
+            <div class="skill">System design</div>
+            <div class="skill">Distributed systems</div>
+            <div class="skill">API design & GraphQL</div>
+            <div class="skill">Python & Go</div>
+            <div class="skill">Cloud (AWS, GCP)</div>
+            <div class="skill">Kubernetes & Docker</div>
+            <div class="skill">Event-driven architecture</div>
+            <div class="skill">Observability & SRE practices</div>
+            <div class="skill">Mentorship & hiring</div>
+            <div class="skill">Security & compliance basics</div>
+          </div>
+        </section>
+
+        <section id="experience" class="section card">
+          <h2>Experience (Selected)</h2>
+          <div class="timeline" style="margin-top:8px">
+            <div class="job">
+              <h3>Lead Engineer — FinTech Platform (Contract)</h3>
+              <div class="meta muted">2020 — Present · Architected payments reconciliation pipelines; migrated monolith to microservices; improved latency by 45%</div
